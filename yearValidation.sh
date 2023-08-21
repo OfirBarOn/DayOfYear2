@@ -5,4 +5,5 @@ function validateYear(){
     then
         echo "Invalid year!"
         exit 1
+    fi
 }

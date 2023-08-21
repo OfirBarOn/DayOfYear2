@@ -3,8 +3,6 @@
 # Check if leap year
 
 function LeapYear(){
-	echo $1
- 	exit
 	NumberValidation="^[a-zA-Z]*$"
 	
 	if [[ $year =~ $NumberValidation ]]; then
