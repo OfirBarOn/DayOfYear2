@@ -3,9 +3,8 @@
 # Check if leap year
 
 function LeapYear(){
+	echo $1
 	NumberValidation="^[a-zA-Z]*$"
-	
-	read -p "Enter a year: " year
 	
 	if [[ $year =~ $NumberValidation ]]; then
 		echo "Wrong input"
