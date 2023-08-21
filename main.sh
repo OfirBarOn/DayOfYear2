@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source LeapYear.sh
-LeapYear
+LeapYear 1912
