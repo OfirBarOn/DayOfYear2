@@ -29,5 +29,5 @@ function totalDaysInMonth(){
         then
             echo "29"
     else
-        echo ${daysInMonths[$month-1]}
+        echo ${daysInMonths[$(( month-1 ))]}
 }
