@@ -31,5 +31,3 @@ function LeapYear(){
 		echo "Leap year"
 	fi
 }
-
-LeapYear()
