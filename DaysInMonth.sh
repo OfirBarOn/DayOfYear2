@@ -1,21 +1,8 @@
 #! /bin/bash
 source LeapYear.sh
+source monthValidation.sh
+source yearValidation.sh
 
-function validateYear(){
-    if [[ $1 =~ ^[a-zA-Z]*+$ ]]
-    then
-        echo "Invalid year!"
-        exit 1
-}
-
-function validateMonth()[
-    if [[ $1 =~ ^[a-zA-Z]*+$ ]]
-    then
-        elif [[ $1 -lt 1 || $1 -gt 12 ]]
-        then
-            echo "Invalid month!"
-            exit 1
-]
 
 function totalDaysInMonth(){
     
