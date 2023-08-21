@@ -1,4 +1,5 @@
 #!/bin/bash
 
 source LeapYear.sh
-LeapYear
+LeapYear 1912
+echo "Done"
