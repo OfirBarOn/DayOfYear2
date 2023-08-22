@@ -31,8 +31,12 @@ function totalDaysInMonth(){
     fi
    
 
-    if [[ $month -eq 2  || $2 -eq 2 ]]
+    ##echo "this is dollar2 " $2
+    ##echo "this is month " $month
+    
+    if [[ $month -eq 1  || $2 -eq 1 ]]
     then
+
         if [[ -z $1 ]]
         then 
             eval1="LeapYear $year"
@@ -47,10 +51,11 @@ function totalDaysInMonth(){
         then
             echo "29"
         fi
+
     elif [[ -z $2 ]]
     then
-        echo ${daysInMonths[$(( month-1 ))]}
+        echo ${daysInMonths[$(( $month-1 ))]}
     else
-        echo ${daysInMonths[$(( $2-1 ))]}
+        echo ${daysInMonths[$(( $2 ))]}
     fi
 }

@@ -12,10 +12,10 @@ then
     exit
 fi
 
-for (( i=1; i<=$month; i++ ))
-do
-    sum=$sum+$(totalDaysInMonth $year $i flag)
+for (( i=1; i<$month; i++ ))
+do  
+    let sum=$sum+$(totalDaysInMonth $year $(( i - 1 )) flag)
 done
 
-sum=$(( $sum+$day ))
+let sum=$(( $sum+$day ))
 echo $sum
