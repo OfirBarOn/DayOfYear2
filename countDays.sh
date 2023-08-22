@@ -14,8 +14,8 @@ fi
 
 for (( i=1; i<=$month; i++ ))
 do
-    let sum=$sum+$(totalDaysInMonth $year $i flag)
+    sum=$sum+$(totalDaysInMonth $year $i flag)
 done
-echo $sum
+
 sum=$(( $sum+$day ))
 echo $sum
